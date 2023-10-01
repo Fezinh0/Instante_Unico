@@ -1,0 +1,481 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+:root {
+    --preto: #000000;
+    --pretoc: #111;
+    --branco: #ffffff;
+    --vermelho: #ff0000;
+    --cinza: #3d3d3d;
+    --cinzac: #f1f1f175;
+    --cinzargba: rgba(168, 168, 168, 0.902);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--branco);
+}
+
+
+/* Seção header */
+#topo {
+    text-align: center;
+    background-color: var(--preto);
+    display: flex;
+    flex-direction: row;
+}
+
+/* Logo do header */
+.logotipo {
+    font-family: mooli;
+    display: flex;
+}
+
+.logotipo a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--branco);
+    width: 80%;
+}
+
+#nav a {
+    width: 100%;
+    color: var(--preto);
+    text-decoration: none;
+    font-family: mooli;
+    font-weight: 550;
+}
+
+#nav a:hover {
+    border-bottom: solid 1px var(--branco);
+    transition: border-bottom 0.5s;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+#menu a {
+    display: block;
+    /* padding: 8px; */
+}
+
+#btn-mobile {
+    display: none;
+}
+
+/* Inicio do footer */
+
+footer {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background-color: var(--preto);
+}
+
+.pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -25px;
+    flex-direction: row;
+}
+
+.assinatura {
+    text-align: center;
+    width: 100%;
+    color: var(--branco);
+    font-weight: 550;
+    position: relative;
+    bottom: 15px;
+}
+
+/* Página principal */
+#conteudo-meio-home {
+    margin: 0;
+    background-color: var(--branco);
+}
+
+.cont-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    background-color: var(--pretoc);
+
+}
+
+.bannerp img {
+    width: 100%;
+}
+
+.bannerp figcaption {
+    position: relative;
+    bottom: 175px;
+    left: 50px;
+    width: 50px;
+    color: var(--branco);
+    font-size: 25pt;
+    font-family: mooli;
+    font-weight: 550;
+}
+
+.button-bannerp {
+    padding: 12px;
+    border: solid none;
+    color: var(--branco);
+    border-radius: 30px;
+    background: none;
+    text-decoration: none;
+}
+
+.button-bannerp:hover {
+    background-color: var(--preto);
+    border: solid 2px var(--branco);
+    transition: background-color 1.5s;
+}
+
+.bannerp,
+figcaption,
+.button-bannerp a {
+    text-decoration: none;
+    color: var(--branco);
+    font-family: mooli;
+    font-weight: 600;
+}
+
+.button-bannerp a:hover {
+
+    transition: 1s;
+}
+
+.fundo {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 100%;
+}
+
+.cardsi {
+    position: relative;
+    left: 50px;
+    width: 150px;
+    border-radius: 8px;
+    height: 400px;
+    overflow: hidden;
+    background-color: var(--cinza);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0.5px 4px var(--cinzargba);
+    flex: 0.25;
+}
+
+.cardsi img {
+    height: 360px;
+    border-radius: 5px;
+}
+
+.cardsi:hover {
+    flex: 2;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Página Seção Fotos */
+#conteudo-meio article {
+    padding: 0;
+    background-color: var(--branco);
+}
+
+#conteudo-meio {
+    margin: 30px auto;
+}
+
+#conteudo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo-card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    background-size: auto;
+}
+
+.card {
+    width: 190px;
+    margin-top: 60px;
+    background-color: var(--preto);
+    font-size: 10pt;
+    font-family: mooli;
+    color: var(--branco);
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    border: solid 2px var(--preto);
+}
+
+/* Inicio da Página Sobre Nós */
+.bannersn img {
+    height: 800px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.bannersn h2 {
+    font-family: sans-serif;
+    font-weight: 550;
+    position: absolute;
+    top: 260px;
+    background-color: var(--cinzac);
+    width: 79%;
+    margin-left: 35px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.bannersn #para1 {
+    font-family: sans-serif;
+    font-weight: 300;
+    width: 80%;
+    position: absolute;
+    top: 300px;
+    color: var(--preto);
+    background-color: var(--cinzac);
+    margin-left: 35px;
+    padding: 5px;
+    margin-top: 25px;
+    font-size: 13pt;
+    border-radius: 9px;
+    text-align: justify;
+}
+
+
+/* 1º Primeira media query */
+@media (max-width: 699px) {
+
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 105px;
+        right: 0;
+        background: var(--branco);
+        color: var(--preto);
+        font-weight: bold;
+        z-index: 1000;
+        height: 10px;
+        transition: .5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 62%);
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        border-bottom: solid 1px var(--preto);
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        border-bottom: solid 1px var(--preto);
+    }
+
+    #btn-mobile {
+        position: absolute;
+        right: 0;
+        top: 42px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: end;
+        border-radius: 4px;
+        background-color: var(--branco);
+        color: var(--preto);
+        padding: 7px;
+        border: solid 2px var(--branco);
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #btn-mobile:hover {
+        border-color: var(--preto);
+        transition: border-color 1s;
+    }
+
+}
+
+/* 2º Segunda media query */
+@media (min-width: 699px) {
+
+    #conteudo-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0px 30px 0px 30px;
+    }
+
+    #menu a {
+        position: relative;
+        bottom: -30px;
+        left: 500px;
+        padding: 4px;
+        border-radius: 2px;
+        color: var(--branco);
+        font-family: mooli;
+        font-weight: 400;
+    }
+
+    #menu a:hover {
+        background-color: var(--branco);
+        transition: 1s;
+        color: var(--preto);
+    }
+
+    .cont-meio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .formulario {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bannerp figcaption {
+        position: relative;
+        bottom: 250px;
+    }
+
+    .cont-home {
+        width: 100%;
+        height: 800px;
+    }
+
+    .wrapper .carrousel {
+        max-width: 480px;
+    }
+
+    .carrousel img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* 3º Terceira media query */
+@media (min-width: 850px) {
+
+    #conteudo-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .cont-meio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    #conteudo-card img {
+        object-fit: contain;
+        object-fit: cover;
+    }
+
+    .bannerp img {
+        height: 600px;
+    }
+
+    .bannerp figcaption {
+        position: relative;
+        bottom: 350px;
+    }
+
+    .wrapper .carrousel {
+        max-width: 650px;
+
+    }
+
+    .wrapper .carrousel img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .bannersn img {
+        height: 700px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1625px) {
+
+    #conteudo-card img {
+        object-fit: contain;
+        object-fit: cover;
+    }
+
+    .cont-meio {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1450px;
+    }
+
+    .bannerp img {
+        height: 775px;
+        width: 100%;
+    }
+
+    .bannersn img {
+        height: 700px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
