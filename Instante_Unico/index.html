@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="O Instante Unico é um site de fotografias, e tem a proposta de mostrar as mais belas paisagens do nosso dia a dia aqui">
+
+    <title>Instante Único - [Home]</title>
+
+    <link rel="StyleSheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+</head>
+
+<body>
+
+    <header id="topo">
+
+        <h1 class="logotipo"><a href="index.html">Instante Único</a></h1>
+
+        <nav id="nav">
+            <button id="btn-mobile">
+                <img src="img/imagemsite/menu.png" alt="">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="secoes.html">Fotos</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+
+     >       </ul>
+        </nav>
+
+    </header>
+
+    <main id="conteudo-meio-home">
+
+        <div class="bannerp">
+            <div>
+                <img class="banner-principal" src="img/imagemsite/lugar.png" alt="castelo com pessoas dentro">
+                <figcaption>Instante Único</figcaption>
+                <figcaption><button class="button-bannerp"><a href="secoes.html">Confira</a></button></figcaption>
+            </div>
+
+            <div>
+                <img class="banner-principal" src="img/imagemsite/pordosol.png" alt="Por do sol">
+                <figcaption>Instante Único</figcaption>
+                <figcaption><button class="button-bannerp"><a href="secoes.html">Confira</a></button></figcaption>
+
+            </div>
+        </div>
+
+        <span class="fundo">
+
+            <section class="galeria">
+
+                <article class="cardsi">
+                    <figure>
+                        <img src="img/FotosFZ/escadamarelacubo.jpg" alt="Escada cubo Itaú">
+                    </figure>
+                </article>
+
+                <article class="cardsi">
+                    <figure>
+                        <img src="img/FotosGB/avmov.jpeg" alt="">
+                    </figure>
+                </article>
+
+                <article class="cardsi">
+                    <figure>
+                        <img src="img/FotosFZ/espacocubo.jpg.jpg" alt="">
+                    </figure>
+                </article>
+
+            </section>
+        </span>
+
+    </main>
+
+    <footer id="fim">
+
+        <div class="pai">
+
+            <address>
+
+
+            </address>
+
+
+            <div>
+                <h1 class="logotipo-footer"><a href="index.html"></a><img src="img/imagemsite/#" alt=""></h1>
+            </div>
+
+            <div class="redes-sociais">
+
+                <a href="https://www.linkedin.com/in/fernando-oliveira-0001a0236/" target="_blank">
+                    <img src="img/imagemsite/logo_linkedin.png" alt="">
+                </a>
+
+            </div>
+
+            <div class="assinatura">
+                <span>Copyright © 2023 by Instante Único | All Rights Reserved</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="slick/slick.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bannerp').slick({
+                autoplay: true,
+                autoplaySpeed: 1500,
+                dots: true,
+                arrow: false
+            });
+        });
+    </script>
+
+</body>
+
+</html>
